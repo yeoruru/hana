@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
+    <title>하나애드IMC -온라인마케팅의 시작과 끝!</title>
+    <meta name="description" content="디지털 마케팅 대행사, 데이터 분석 전문가로 구성된 퍼포먼스 마케팅, SA, DA, Video, Mobile 마케팅 대행사">
+    <!--css-->
+    <link href="../asset2019/css/sub.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../asset2019/img/favicon.ico">
+    <!--script-->
+    <script src="../asset2019/js/jquery-3.3.1.min.js"></script>
+    <script src="../asset2019/js/ui_library_common.js"></script>
+    <script src="../asset2019/js/script_main.js"></script>    
+    <script>
+        $(function() {
+            $('header').addClass('on');
+        });
+
+        //headerFix서브페이지
+        var scrollTop =0;  
+        headerFix();
+
+        $(window).on('scroll' ,function (){
+            headerFix();
+        });  
+        function headerFix() {
+            scrollTop = $(document).scrollTop();   
+            $('header').addClass('on');
+            $('.logoimg').attr("src", 'asset2019/img/logo2.png');
+            $('div.fast').addClass('on');
+            $('div.fastM').addClass('on');
+            $('.goTop').addClass('on');
+            if (scrollTop < 150) {
+                $('header').addClass('on');
+                $('.logoimg').attr("src", 'asset2019/img/logo.png');
+                $('section.hana').removeClass('on');
+                $('div.fast').removeClass('on');
+                $('div.fastM').removeClass('on');
+                $('.goTop').removeClass('on');
+            }
+        } 
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!--SKIP-->
+        <a href="#main" id="skip-nav">본문 바로가기</a>
+        <!--SKIP-->
+        <!--main-->
+        <header>
+            <h1 class="logo"><a href="../index.html"><img src="../asset2019/img/logo2.png" alt="하나애드아이엠씨"></a></h1>
+            <a href="#" class="moGnb"></a>
+            <nav class="pc">
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <span class="bar"></span>
+                <a href="#" class="down">회사소개서<span><img src="../asset2019/img/down.png" alt="다운로드"></span></a>
+            </nav>
+            <nav class="mo">
+                <div class="top">
+                    <a href="#" class="close"><img src="../asset2019/img/moOpen2.png" alt="닫기"></a>
+                </div>
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="gnbIcon">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="bottom">
+                    <li>Tel.  02)2051-5620</li>
+                    <li>Email. mkt1@hanaad.net</li>
+                    <li>ⓒ 2019 HANAAD IMC</li>
+                </ul>
+            </nav>
+        </header>
+        <!--sideBar-->
+        <div class="fast">
+            <aside class="sideBar">
+                <a href="#" class="open">빠른상담<br><p>열기</p></a>
+                <div class="inner">
+                    <div class="form-box">
+                        <h3><em>*</em>고객사</h3>
+                        <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>담당자</h3>
+                        <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>연락처</h3>
+                        <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>관심상품</h3>
+                        <div class="select">
+                            <select>
+                                <option>검색광고</option>
+                                <option>콘텐츠광고</option>
+                                <option>바이럴광고</option>
+                                <option>DA광고</option>
+                                <option>기타광고</option>
+                            </select>
+                        </div>
+                        <div class="check-box">
+                        <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                        </div>
+                        <a href="#" class="view">자세히보기</a>
+                        <button>문의하기</button>
+                    </div>
+                </div>
+                <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+            </aside>
+        </div>
+        <div class="fastM">
+            <aside class="sideBar">
+                <div class="box">
+                    <div class="inner">
+                       <h2><span>빠른상담</span> 문의</h2>
+                       <a href="#" class="close"><img src="asset2019/img/moOpen3.png" alt="닫기"></a>
+                        <div class="form-box">
+                            <h3><em>*</em>고객사</h3>
+                            <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>담당자</h3>
+                            <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>연락처</h3>
+                            <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>관심상품</h3>
+                            <div class="select">
+                                <select>
+                                    <option>검색광고</option>
+                                    <option>콘텐츠광고</option>
+                                    <option>바이럴광고</option>
+                                    <option>DA광고</option>
+                                    <option>기타광고</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-box">
+                            <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                            </div>
+                            <a href="#" class="view">자세히보기</a>
+                    <button>문의하기</button>
+                    <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+                </div>
+                <a href="#" class="open">빠른상담</a>
+            </aside>
+        </div>
+        <!--//sideBar-->
+        <!--top-->
+        <a href="#top" class="goTop"></a>
+        <!--//top-->
+        <section class="main techmain" id="main">
+           <p class="mainImg"><img src="../asset2019/img/techMain.png" alt=""></p>
+            <div class="mainTitle">
+                <h2>Tech Solution</h2>
+                <p class="tech">하나애드만의 노하우가 담긴 고객사 맞춤형<br>광고최적화 솔루션을 제공합니다.</p>
+            </div>
+        </section>
+        <!--//main-->
+        <!--contents-->
+        <section class="solutionTop">
+            <div class="inner">
+                <div class="left">
+                    <h2>
+                        <span>For the better</span> <br class="mo a">management<br>
+                        <span>For the better</span> <br class="mo a">performance
+                    </h2>
+                    <h3>
+                        <span>고객사의 매출 성장을 위해서는,</span>
+                        <span>캠페인 규모와 목적에 따른 다양한 솔루션이 필요합니다.</span>
+                    </h3>
+                    <p>하나애드는 다각도의 연구를 통해 <br class="mo a">고객사에 필요한 다양한 솔루션을 <br class="pc">
+                    종합적으로 운영하고, <br class="mo a">실시간으로 이슈에 대응하여 광고에 반영할 수 있는 <br class="pc"><br class="mo a">
+                    솔루션을 통해 고객사의 고민을 해결해 드립니다.</p>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>커스터마이징<br><span>솔루션</span></li>
+                        <li>경쟁사 분석<br><span>솔루션</span></li>
+                        <li>검색광고 최적화<br><span>솔루션</span></li>
+                        <li>UX 분석<br><span>솔루션</span></li>
+                        <li>광고 최적화<br><span>솔루션</span></li>
+                        <li>광고 성과 분석<br><span>솔루션</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="marketing solution">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <div class="title">
+                            <h3><span>커스터마이징</span> <br class="pc">솔루션</h3>
+                            <p>고객사 이슈에 대응할 수 있는 솔루션을<br class="pc">
+                            자체 개발하고, <br class="mo">오로지 고객사의 마케팅<br class="pc">
+                            활동만을 위한 솔루션 제공</p>
+                        </div>
+                        <div class="text">
+                            <h4>커스터마이징 서비스</h4>
+                            <p class="redBox">
+                                <span>키워드 추출</span>
+                                <span>상품 업데이트</span>
+                                <span>랜딩페이지 모니터링</span><br>
+                                <span class="seo">SEO 모니터링</span>
+                                <span>API 연동</span>
+                            </p>
+                            <p class="img">
+                                <img src="../asset2019/img/tech1-1.png" alt="">
+                                <img src="../asset2019/img/tech1-2.png" alt="">
+                                <img src="../asset2019/img/tech1-3.png" alt="">
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <h3><span>광고성과 분석</span> <br class="pc">솔루션</h3>
+                            <p>다양한 광고 분석 Tool을 활용하여<br class="pc">
+                            다각도에서 <br class="mo">고객사 캠페인에 대한<br class="pc">
+                            성과 분석 진행</p>
+                        </div>
+                        <div class="text">
+                            <h4>분석 TOOL 사용</h4>
+                            <p class="img"><img src="../asset2019/img/tech2-1.png" alt=""></p>
+                            <h4>실시간 모니터링</h4>
+                            <p class="img">
+                                <img src="../asset2019/img/tech2-2.png" alt="">
+                                <img src="../asset2019/img/tech2-3.png" alt="">
+                                <img src="../asset2019/img/tech2-4.png" alt="">
+                            </p>
+                            <h4>다각도 분석</h4>
+                            <p><em>광고 성과 정밀 분석 :</em> 마케팅 개선 방안 자료 추출<br>
+                            <em>방문자 분석 :</em> 키워드별 유입분석<br>
+                            <em>웹사이트 분석 :</em> 롱테일 키워드 발굴</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <h3><span>검색광고 최적화</span> <br class="pc">솔루션</h3>
+                            <p>고도화된 시스템으로 자동화, 최적화,<br class="pc">
+                            실시간 <br class="mo">모니터링을 진행하여<br class="pc">
+                            캠페인 효율 극대화</p>
+                        </div>
+                        <div class="text">
+                            <h4>자동 키워드 추출</h4>
+                            <p>1일 1회 업데이트 된 신규상품을 확인하여 자동으로 키워드 추출</p>
+                            <h4>SEO모니터링</h4>
+                            <p>검색엔진에 맞는 키워드 최적화, 노출 분석, 컨텐츠 최적화를 위한 모니터링</p>
+                            <h4>자사 및 경쟁사 광고영역 모니터링</h4>
+                            <p>사용자들의 관심사가 반영된 관련성 높은 키워드 패턴 분석 및 신규 키워드 등록</p>
+                            <p class="img">
+                                <img src="../asset2019/img/tech3-1.png" alt="">
+                                <img src="../asset2019/img/tech3-2.png" alt="">
+                                <img src="../asset2019/img/tech3-2.png" alt="">
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <h3><span>광고 최적화</span> <br class="pc">솔루션</h3>
+                            <p>사용자의 행동을 분석하여 시각화 <br class="pc">
+                            데이터를 <br class="mo">통해 전환을 이끌어내는<br class="pc">
+                            캠페인 운영</p>
+                        </div>
+                        <div class="text">
+                            <h4>랜딩페이지 모니터링</h4>
+                            <p>Landing URL을 자동으로 탐지하여 오류, 품절, 검색 결과 없음 페이지 등 <br class="pc">
+                            비효율적인 내용 검증</p>
+                            <p class="redBox">
+                                <span>연결 URL 데이터 입력</span>
+                                <span>페이지 모니터링</span>
+                                <span>광고안내</span>
+                            </p>
+                            <h4>자동 입찰</h4>
+                            <p>입찰 현황 모니터링을 통해 해당 영역의 광고를 목표 순위에 맞춰 입찰가 <br class="pc">
+                            자동 비딩</p>
+                            <h4>대량 관리</h4>
+                            <p>키워드 목표 순위별 입찰가와 노출수, 전환수 등의 견적을 대량으로 확인</p>
+                            <p class="img">
+                                <img src="../asset2019/img/tech4-1.png" alt="">
+                                <img src="../asset2019/img/tech4-2.png" alt="">
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="solutionB">
+            <div class="iconTitle">
+                <h2><span>경쟁사 분석</span> 솔루션</h2>
+                <p>경쟁사의 DA광고와 SA광고를 모니터링하고 <br class="pc">분석하여 고객사 캠페인 운영에 인사이트 반영</p>
+            </div> 
+            <div class="box">
+                <h3>경쟁사 DA광고&SA광고 모니터링</h3>
+                <p>경쟁사의 DA광고와 SA광고를 분석하고, <br class="mo a">광고 집행 내역 및 추정 금액 모니터링</p>
+                <p class="img">
+                    <span class="a"><img src="../asset2019/img/tech5-1.png" alt="경쟁사 SA광고 모니터링"></span>
+                    <span class="b"><img src="../asset2019/img/tech5-2.png" alt="경쟁사 DA광고 모니터링"></span>
+                </p>
+            </div>  
+            <div class="iconTitle">
+                <h2><span>UX 분석</span> 솔루션</h2>
+                <p>사용자의 행동을 분석하여 시각화 데이터를 <br class="pc">통해 전환을 이끌어내는 인사이트 제공</p>
+            </div> 
+            <div class="ux">
+                   <div class="box a">
+                    <h3>방문자 빅데이터 분석</h3>
+                    <p>사용자의 마우스 클릭 & 오버에 관련된 지표를 통해 최종 목적지 및<br class="pc">
+                    전환이 이뤄진 콘텐츠를 확인 후 사용자의 주요 관심 내용을 파악</p>
+                    <p class="img">
+                        <span class="a"><img src="../asset2019/img/tech6-1.png" alt="마우스 클릭 히트맵"></span>
+                        <span class="b"><img src="../asset2019/img/tech6-2.png" alt="마우스 무브 히트맵"></span>
+                    </p>
+                </div>        
+                <div class="box b">
+                    <h3>UX 최적화를 위한 분석 & 방안 제공</h3>
+                    <p>웹사이트를 방문한 사용자 행태를 시각화된 데이터를 제공하여 <br class="pc">
+                    결과 뿐 아니라 UX의 원인과 과정까지 함께 분석</p>
+                    <p class="img">
+                        <span class="a"><img src="../asset2019/img/tech6-3.png" alt="UX 분석 플랫폼 뷰저블1"></span>
+                        <span class="b"><img src="../asset2019/img/tech6-4.png" alt="UX 분석 플랫폼 뷰저블2"></span>
+                    </p>
+                </div>  </div>
+        </section>
+        
+        
+        
+        <!--//contents-->
+        <!--footer-->
+        <footer>
+            <div class="inner">
+                <ul class="left">
+                    <li>(주)하나애드아이엠씨Ⅰ사업자등록 : 117-81-48164 Ⅰ대표 : 김진백</li>
+                    <li>서울시 영등포구 여의도동 17-3 삼환까뮤빌딩(태흥빌딩) 2층 (07236)</li>
+                    <li>Tel. 02-2051-5620ⅠFax. 02-2051-5654ⅠE-mail. mkt1@hanaad.net</li>
+                    <li>무통장입금 (하나은행) : 772-910004-07104<em class="mo">Ⅰ</em><br class="mo">통신판매업 신고번호 : 제2016-서울영등포-0824호</li>
+                    <li><img src="../asset2019/img/footer.png" alt="인증마크"></li>
+                </ul>
+                <ul class="right">
+                    <li><img src="../asset2019/img/naver.png" alt="네이버공식대행사"></li>
+                    <li><img src="../asset2019/img/kakao.png" alt="카카오공식대행사"></li>
+                    <li><img src="../asset2019/img/google.png" alt="구글공식대행사"></li>
+                    <li><img src="../asset2019/img/criteo.png" alt="크리테오공식대행사"></li>
+                </ul>
+            </div>
+        </footer>
+         <!--//footer-->
+    </div>   
+	</body>
+</html>		

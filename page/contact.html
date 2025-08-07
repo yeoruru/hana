@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
+    <title>하나애드IMC -온라인마케팅의 시작과 끝!</title>
+    <meta name="description" content="디지털 마케팅 대행사, 데이터 분석 전문가로 구성된 퍼포먼스 마케팅, SA, DA, Video, Mobile 마케팅 대행사">
+    <!--css-->
+    <link href="../asset2019/css/sub.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../asset2019/img/favicon.ico">
+    <!--script-->
+    <script src="../asset2019/js/jquery-3.3.1.min.js"></script>
+    <script src="../asset2019/js/ui_library_common.js"></script>
+    <script src="../asset2019/js/modernizr.custom.js"></script>
+    <script src="../asset2019/js/script_main.js"></script>    
+    <script>
+        $(function() {
+            $('header').addClass('on');
+        });
+
+        //headerFix서브페이지
+        var scrollTop =0;  
+        headerFix();
+
+        $(window).on('scroll' ,function (){
+            headerFix();
+        });  
+        function headerFix() {
+            scrollTop = $(document).scrollTop();   
+            $('header').addClass('on');
+            $('.logoimg').attr("src", 'asset2019/img/logo2.png');
+            $('div.fast').addClass('on');
+            $('div.fastM').addClass('on');
+            $('.goTop').addClass('on');
+            if (scrollTop < 150) {
+                $('header').addClass('on');
+                $('.logoimg').attr("src", 'asset2019/img/logo.png');
+                $('section.hana').removeClass('on');
+                $('div.fast').removeClass('on');
+                $('div.fastM').removeClass('on');
+                $('.goTop').removeClass('on');
+            }
+        } 
+</script>
+</head>
+<body>
+    <div class="wrap">
+        <!--SKIP-->
+        <a href="#main" id="skip-nav">본문 바로가기</a>
+        <!--SKIP-->
+        <!--main-->
+        <header>
+            <h1 class="logo"><a href="../index.html"><img src="../asset2019/img/logo2.png" alt="하나애드아이엠씨"></a></h1>
+            <a href="#" class="moGnb"></a>
+            <nav class="pc">
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <span class="bar"></span>
+                <a href="#" class="down">회사소개서<span><img src="../asset2019/img/down.png" alt="다운로드"></span></a>
+            </nav>
+            <nav class="mo">
+                <div class="top">
+                    <a href="#" class="close"><img src="../asset2019/img/moOpen2.png" alt="닫기"></a>
+                </div>
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="gnbIcon">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="bottom">
+                    <li>Tel.  02)2051-5620</li>
+                    <li>Email. mkt1@hanaad.net</li>
+                    <li>ⓒ 2019 HANAAD IMC</li>
+                </ul>
+            </nav>
+        </header>
+        <!--sideBar-->
+        <div class="fast">
+            <aside class="sideBar">
+                <a href="#" class="open">빠른상담<br><p>열기</p></a>
+                <div class="inner">
+                    <div class="form-box">
+                        <h3><em>*</em>고객사</h3>
+                        <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>담당자</h3>
+                        <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>연락처</h3>
+                        <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>관심상품</h3>
+                        <div class="select">
+                            <select>
+                                <option>검색광고</option>
+                                <option>콘텐츠광고</option>
+                                <option>바이럴광고</option>
+                                <option>DA광고</option>
+                                <option>기타광고</option>
+                            </select>
+                        </div>
+                        <div class="check-box">
+                        <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                        </div>
+                        <a href="#" class="view">자세히보기</a>
+                        <button>문의하기</button>
+                    </div>
+                </div>
+                <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+            </aside>
+        </div>
+        <div class="fastM">
+            <aside class="sideBar">
+                <div class="box">
+                    <div class="inner">
+                       <h2><span>빠른상담</span> 문의</h2>
+                       <a href="#" class="close"><img src="asset2019/img/moOpen3.png" alt="닫기"></a>
+                        <div class="form-box">
+                            <h3><em>*</em>고객사</h3>
+                            <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>담당자</h3>
+                            <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>연락처</h3>
+                            <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>관심상품</h3>
+                            <div class="select">
+                                <select>
+                                    <option>검색광고</option>
+                                    <option>콘텐츠광고</option>
+                                    <option>바이럴광고</option>
+                                    <option>DA광고</option>
+                                    <option>기타광고</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-box">
+                            <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                            </div>
+                            <a href="#" class="view">자세히보기</a>
+                    <button>문의하기</button>
+                    <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+                </div>
+                <a href="#" class="open">빠른상담</a>
+            </aside>
+        </div>
+        <!--//sideBar-->
+        <!--top-->
+        <a href="#top" class="goTop"></a>
+        <!--//top-->
+        <section class="main contactmain" id="main">
+           <p class="mainImg"><img src="../asset2019/img/contact_main.png" alt=""></p>
+            <div class="mainTitle">
+                <h2>contact us</h2>
+                <p>풍부한 경험을 통해 정착된 노하우로 <br class="mo">여러분의 미래와<br class="pc">
+                함께 성장하는 <br class="mo">회사 바로 하나애드입니다.</p>
+            </div>
+        </section>
+        <!--//main-->
+        <!--contents-->
+        <section class="contact">
+            <div class="title">
+                <h2>광고문의</h2>
+                <h3>고객사의 모든 고민은 하나애드의 몫입니다.</h3>
+                <p>아래 내용을 자세히 작성해주시면 <br class="mo">빠른 답변을 드릴수 있도록 최선을 다하겠습니다.</p>
+                <p class="call">
+                    <em>tel</em> 02-2051-5620 <span>|</span> <em>E-mail</em> mkt1@hanaad.net
+                </p>
+            </div>
+            <div class="form-box">
+                    <div class="inner">
+                        <div class="left">
+                                <h3>담당자</h3>
+                                <p class="a"><input type="text" placeholder="이름을 입력해주세요" style="font-family: 'NanumSquare', sans-serif;color: #000; font-size: 17px"></p>
+                                <h3>연락처</h3>
+                                <p class="b"><input type="text" placeholder="연락처를 ‘-’ 없이 입력해주세요" style="font-family: 'NanumSquare', sans-serif;color: #000; font-size: 17px"></p>
+                                <h3>문의상품</h3>
+                                <div class="select">
+                                    <select>
+                                        <option>문의상품 선택</option>
+                                        <option>검색광고</option>
+                                        <option>콘텐츠광고</option>
+                                        <option>바이럴광고</option>
+                                        <option>DA광고</option>
+                                        <option>기타광고</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="right">
+                                <h3>고객사</h3>
+                                <p class="a"><input type="text" placeholder="회사명을 입력해주세요" style="font-family: 'NanumSquare', sans-serif;color: #000; font-size: 17px"></p>
+                                <h3>이메일</h3>
+                                <p class="b"><input type="text" placeholder="이메일을 입력해주세요" style="font-family: 'NanumSquare', sans-serif;color: #000; font-size: 17px"></p>
+                                <h3>광고예산</h3>
+                                <div class="select">
+                                    <select>
+                                        <option>광고예산 선택</option>
+                                        <option>월 1,000만원 이하</option>
+                                        <option>월 5,000만원 이하</option>
+                                        <option>월 5,000만원 이상</option>
+                                        <option>직접 입력</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div class="bottom">
+                                <h3>문의내용</h3>
+                                <p class="c"><input type="text"style="font-family: 'NanumSquare', sans-serif;color: #000; font-size: 17px"></p>
+                        </div>
+                        <div class="bottomBox">
+                            <div class="a">
+                                <div class="check">
+                                    <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침에 동의합니다.</label>
+                                </div>    
+                                <a href="#">자세히보기</a>
+                            </div>
+                            <div class="b">
+                                <div class="check">   
+                                    <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보수집 이용안내에 동의합니다.</label>
+                                </div>
+                                <a href="#">자세히보기</a>
+                            </div>
+                        </div>                        
+                        <!--개인정보취금방침-->
+                        <div class="veiwInner a">
+                            <h2>개인정보 제공에 관한 사항 동의 안내</h2>
+                            <a href="#" class="close"><img src="../asset2019/img/moOpen3.png" alt="닫기"></a>
+                            <div class="in">
+                                <ul>
+                                    <li><em>1.</em>개인정보의 수집 및 이용목적 하나애드(이하 “회사”라 합니다.)는 고객 문의 지원 업무를 위해 아래와 같은 개인정보를 수집하고 있으며, 고객 상담과 문의응대를 위해서만 해당 정보를 활용합니다.</li>
+                                    <li><em>2.</em>수집하는 개인정보 항목
+                                     <span>- 필수 항목: 이름, 이메일, 전화번호, 홈페이지 주소</span>
+                                    </li>
+                                    <li><em>3.</em>회사는 원칙적으로 개인정보 수집 및 이용목적 이 달성된 후, 해당 개인정보를 지체 없이 파 기합니다.
+                                    단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령이 정한 일정한 기간 동안 개인정보를 보관합니다. 그 밖의 사항은 개인정보 취급방침을 준수합니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="veiwInner b">
+                            <h2>개인정보 수집 및 이용 동의 안내</h2>
+                            <a href="#" class="close"><img src="../asset2019/img/moOpen3.png" alt="닫기"></a>
+                            <div class="in">
+                                <h4>[소비자 권익 보호에 관한 사항]</h4>
+                                <p>최소한의 정보처리 및 동의거부에 대한 안내 정보동의 시 상담 및 서비스 이용 권유 등을 위해 최소한의 정보만 수집ㆍ이용하게 되며, 본 동의를 거부하시는 경우 서비스 상담이 불가능할 수 있습니다.</p>
+                                <h4>[개인정보 수집ㆍ이용 동의 철회]</h4>
+                                <p>개인정보 수집ㆍ이용에 동의한 이후에도 동의를 철회하거나 개인정보의 처리 및 연락하는 것을 중지하도록 청구할 수 있습니다.
+                                제공 사실 통보 요구, 열람 및 정정ㆍ삭제 청구 고객님께서는 고객님의 정보를 타인에게 제공한 사실이 있는 경우 그 사실을 조회해 줄 것을 요구할 수 있습니다.
+                                또한 고객님께서는 정보열람이나 정정ㆍ삭제를 요구할 수 있습니다. 고객님의 권리와 그 행사방법 등 자세한 사항은 당사 홈페이지(http://hanaad.net)를 참조하여 주시기 바랍니다.
+                                문의사항 및 동의 철회, 조회 요구 방법 : 전화[02-2051-5620], 인터넷 홈페이지 고객센터</p>
+                                <h4>[개인정보의 제공에 관한 사항]</h4>
+                                <ul>
+                                    <li><em>1.</em>개인정보를 제공 받는 자: 하나애드IMC 마케팅 담당</li>
+                                    <li><em>2.</em>개인정보를 제공받는 자의 이용 목적
+                                        <span>- 마케팅 서비스에 관한 상담 및 가입 안내</span>
+                                        <span>- 마케팅 서비스 이용 권유</span>
+                                    </li>
+                                    <li><em>3.</em>제공하는 개인정보
+                                        <span>- 마케팅 서비스 이용 권유</span>
+                                    </li>
+                                    <li><em>4.</em>제공받는 자의 개인정보 보유ㆍ이용기간
+                                        <span>- 수집된 개인정보는 처리 목적 달성 등 그 개인정보가 불필요하게 되었을 때에는 삭제합니다.</span>
+                                        <span>- 정보제공자가 개인정보 삭제를 요청할 경우 즉시 삭제합니다.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button>문의하기</button>
+                    </div>
+            </div>
+        </section>
+        <section class="contact b">
+            <div class="title">
+                <h2>채용문의</h2>
+                <h3>여러분의 미래화 함께 성장하는 회사 <br class="mo a">바로 하나애드 IMC입니다.</h3>
+                <p>은 광고주가 하나애드를 선택하는 이유는 바로 <br class="mo a">사람입니다.<br class="pc">
+                하나애드와 함께한다면 여러분도 <br class="mo a">광고주들이 선택하는 마케터로 성장할 수 있습니다.<br>
+                당신의 꿈에 더 가까이 다가가고 싶으신가요? <br class="mo a">지금, 하나애드와 함께 시작하세요!</p>
+            </div>
+            <div class="box">
+                <div class="inner">
+                    <p class="img"><img src="../asset2019/img/contactPoster.png" alt="하나애드아이엠씨동료구함"></p>
+                    <div class="text">
+                        <h3>모집부문</h3>
+                        <ul class="a">
+                            <li>
+                                <h4>디지털마케팅 온라인광고 AE</h4>
+                                <ul class="in">
+                                    <li>온라인광고 관리 (Search Ad)</li>
+                                    <li>광고 데이터 분석 및 통계</li>
+                                    <li>마케팅 기획&제안</li>
+                                    <li>내근관리직(비영업직-근로소득자)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>PHP웹 개발</h4>
+                                <ul class="in">
+                                    <li>PHP CodeIgniter 프레임워크 (실무 사용)</li>
+                                    <li>디지털 에이전시 또는 웹개발 경력 3~6년차</li>
+                                    <li>모바일 개발 경험 있는 분 (필수는 아님)</li>
+                                    <li>디지털 플랫폼 구축 및 O2O개발</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>마케팅팀 쇼핑몰 운영·관리 사원</h4>
+                                <ul class="in">
+                                    <li>폐쇄몰/사이트 운영관리 (상품등록, 판매/정산 관리)</li>
+                                    <li>거래처 관리</li>
+                                    <li>마케팅 사무보조</li>
+                                    <li>내근관리직(비영업직-근로소득자)</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h4>SNS 마케터</h4>
+                                <ul class="in">
+                                    <li>광고주 커뮤니케이션 및 콘텐츠/이벤트 기획</li>
+                                    <li>SNS 채널 운영 및 콘텐츠 기획/제작</li>
+                                    <li>SNS 광고 집행</li>
+                                    <li>내근관리직(비영업직)</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <h3>상세사항</h3>
+                        <ul class="b">
+                            <li>
+                                <h4>공통자격</h4>
+                                <p>대내외적 조직과 원활한 협업 및 커뮤니케이션이 가능한 자<br>
+                                일을 통해 스스로 성장하고자 하는 의지가 뚜렷한 자<br>
+                                적극적이고 책임감이 강한 자</p>
+                            </li>
+                            <li>
+                                <h4>전형단계</h4>
+                                <p>서류전형 > 실무자면접 > 최종합격</p>
+                            </li>
+                            <li>
+                                <h4>모집인원</h4>
+                                <p>신입/경력 00명 (상시채용)</p>
+                            </li>
+                            <li>
+                                <h4>고용형태</h4>
+                                <p>정규직</p>
+                            </li>
+                            <li>
+                                <h4>접수방법</h4>
+                                <p>이력서양식 : 사람인 온라인 이력서 <br class="mo">(사람인 온라인 채용시스템)</p>
+                            </li>
+                        </ul>
+                        <div class="btn">
+                            <button class="si"><img src="../asset2019/img/button1.png" alt="사람인즉시지원"></button>
+                            <button class="jk"><img src="../asset2019/img/button2.png" alt="잡코리아즉시지원"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact c">
+            <div class="title">
+                <h2>사내문화</h2>
+                <h3>사원들의 자아실현을 적극 지원해주는 회사 <br class="mo a">하나애드IMC입니다.</h3>
+                <p>하나애드는 스마트하고 크리에이티브한 <br class="mo a">전문가들과 함께 새로운 도약을 만들어 나가고 있습니다.<br>
+                하나하나의 나무가 큰 숲을 이룰 수 있도록 <br class="mo a">격려와 지원을 아끼지 않고 있습니다.</p>
+            </div>
+            <div class="inner">
+                <div class="box">
+                    <ul class="icon">
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact1.png" alt=""></p>
+                            <h4>자유로운 복장</h4>
+                            <p>편안한 업무 환경을 위한<br>자유로운 복장 장려</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact2.png" alt=""></p>
+                            <h4>업무교통비 지원</h4>
+                            <p>외근, 야근, 출장 시<br>교통비 지원</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact3.png" alt=""></p>
+                            <h4>교육시스템 지원</h4>
+                            <p>멘토링, 직무교육, 워크샵<br>업무관련 도서 비용 지원</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact4.png" alt=""></p>
+                            <h4>팀비 지원</h4>
+                            <p>매월 지원되는 팀비로<br>팀원간의 소통 증대</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact5.png" alt=""></p>
+                            <h4>자유로운 연차사용</h4>
+                            <p>입사1년 미만도<br>11개의 연차 필수 사용!</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact6.png" alt=""></p>
+                            <h4>리프레시 휴가</h4>
+                            <p>3년/6년/9년<br>장기근속자 휴가제공</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact7.png" alt=""></p>
+                            <h4>연봉제</h4>
+                            <p>4대보험 가입,<br>성과 연봉제</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact8.png" alt=""></p>
+                            <h4>성과급</h4>
+                            <p>성과에 따라 성과급 및<br>연말 보너스 지급</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact9.png" alt=""></p>
+                            <h4>패밀리 데이</h4>
+                            <p>매월1회 본인희망일에<br>3시간 일찍 조기 퇴근</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact10.png" alt=""></p>
+                            <h4>올핸즈미팅</h4>
+                            <p>정기적인 전 사원 미팅으로<br>사내 소통 문화 형성</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact11.png" alt=""></p>
+                            <h4>벚꽃점심</h4>
+                            <p>벚꽃이 만개하는 계절<br>여유롭게 즐기는 점심시간</p>
+                        </li>
+                        <li>
+                            <p class="i"><img src="../asset2019/img/contact12.png" alt=""></p>
+                            <h4>간식제공</h4>
+                            <p>배고프고 목마를 때<br>다양한 간식 무한 제공</p>
+                        </li>
+                    </ul>
+                    <div class="play">
+                        <p class="img"><img src="../asset2019/img/contactPlay.png" alt="워크샵사진"></p>
+                        <h4><span>play</span> shop</h4>
+                        <ul>
+                            <li>2018 in <em>Gaum</em></li>     
+                            <li>2017 in <em>Saipan</em></li>
+                        </ul>
+                    </div>
+                    <div class="play">
+                        <p class="img"><img src="../asset2019/img/contactCation.png" alt="인증마크"></p>
+                        <h4><span>Certification</span></h4>
+                        <ul>
+                            <li><em>벤처기업</em> 인증</li>     
+                            <li><em>가족친화 우수기업</em> 인증</li>     
+                            <li><em>여성친화일촌기업</em> 인증</li>     
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--//contents-->
+        <!--footer-->
+        <footer>
+            <div class="inner">
+                <ul class="left">
+                    <li>(주)하나애드아이엠씨Ⅰ사업자등록 : 117-81-48164 Ⅰ대표 : 김진백</li>
+                    <li>서울시 영등포구 여의도동 17-3 삼환까뮤빌딩(태흥빌딩) 2층 (07236)</li>
+                    <li>Tel. 02-2051-5620ⅠFax. 02-2051-5654ⅠE-mail. mkt1@hanaad.net</li>
+                    <li>무통장입금 (하나은행) : 772-910004-07104<em class="mo">Ⅰ</em><br class="mo">통신판매업 신고번호 : 제2016-서울영등포-0824호</li>
+                    <li><img src="../asset2019/img/footer.png" alt="인증마크"></li>
+                </ul>
+                <ul class="right">
+                    <li><img src="../asset2019/img/naver.png" alt="네이버공식대행사"></li>
+                    <li><img src="../asset2019/img/kakao.png" alt="카카오공식대행사"></li>
+                    <li><img src="../asset2019/img/google.png" alt="구글공식대행사"></li>
+                    <li><img src="../asset2019/img/criteo.png" alt="크리테오공식대행사"></li>
+                </ul>
+            </div>
+        </footer>
+         <!--//footer-->
+    </div>        
+	</body>
+</html>		

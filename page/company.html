@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
+    <title>하나애드IMC -온라인마케팅의 시작과 끝!</title>
+    <meta name="description" content="디지털 마케팅 대행사, 데이터 분석 전문가로 구성된 퍼포먼스 마케팅, SA, DA, Video, Mobile 마케팅 대행사">
+    <!--css-->
+    <link href="../asset2019/css/sub.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../asset2019/img/favicon.ico">
+    <!--script-->
+    <script src="../asset2019/js/jquery-3.3.1.min.js"></script>
+    <script src="../asset2019/js/ui_library_common.js"></script>
+    <script src="../asset2019/js/script_main.js"></script>    
+    <script>
+        $(function() {
+            $('header').addClass('on');
+        });
+
+        //headerFix서브페이지
+        var scrollTop =0;  
+        headerFix();
+
+        $(window).on('scroll' ,function (){
+            headerFix();
+        });  
+        function headerFix() {
+            scrollTop = $(document).scrollTop();   
+            $('header').addClass('on');
+            $('.logoimg').attr("src", 'asset2019/img/logo2.png');
+            $('div.fast').addClass('on');
+            $('div.fastM').addClass('on');
+            $('.goTop').addClass('on');
+            if (scrollTop < 150) {
+                $('header').addClass('on');
+                $('.logoimg').attr("src", 'asset2019/img/logo.png');
+                $('section.hana').removeClass('on');
+                $('div.fast').removeClass('on');
+                $('div.fastM').removeClass('on');
+                $('.goTop').removeClass('on');
+            }
+        } 
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!--SKIP-->
+        <a href="#main" id="skip-nav">본문 바로가기</a>
+        <!--SKIP-->
+        <!--main-->
+        <header>
+            <h1 class="logo"><a href="../index.html"><img src="../asset2019/img/logo2.png" alt="하나애드아이엠씨"></a></h1>
+            <a href="#" class="moGnb"></a>
+            <nav class="pc">
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <span class="bar"></span>
+                <a href="#" class="down">회사소개서<span><img src="../asset2019/img/down.png" alt="다운로드"></span></a>
+            </nav>
+            <nav class="mo">
+                <div class="top">
+                    <a href="#" class="close"><img src="../asset2019/img/moOpen2.png" alt="닫기"></a>
+                </div>
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="gnbIcon">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="bottom">
+                    <li>Tel.  02)2051-5620</li>
+                    <li>Email. mkt1@hanaad.net</li>
+                    <li>ⓒ 2019 HANAAD IMC</li>
+                </ul>
+            </nav>
+        </header>
+        <!--sideBar-->
+        <div class="fast">
+            <aside class="sideBar">
+                <a href="#" class="open">빠른상담<br><p>열기</p></a>
+                <div class="inner">
+                    <div class="form-box">
+                        <h3><em>*</em>고객사</h3>
+                        <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>담당자</h3>
+                        <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>연락처</h3>
+                        <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>관심상품</h3>
+                        <div class="select">
+                            <select>
+                                <option>검색광고</option>
+                                <option>콘텐츠광고</option>
+                                <option>바이럴광고</option>
+                                <option>DA광고</option>
+                                <option>기타광고</option>
+                            </select>
+                        </div>
+                        <div class="check-box">
+                        <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                        </div>
+                        <a href="#" class="view">자세히보기</a>
+                        <button>문의하기</button>
+                    </div>
+                </div>
+                <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+            </aside>
+        </div>
+        <div class="fastM">
+            <aside class="sideBar">
+                <div class="box">
+                    <div class="inner">
+                       <h2><span>빠른상담</span> 문의</h2>
+                       <a href="#" class="close"><img src="/asset2019/img/moOpen3.png" alt="닫기"></a>
+                        <div class="form-box">
+                            <h3><em>*</em>고객사</h3>
+                            <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>담당자</h3>
+                            <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>연락처</h3>
+                            <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>관심상품</h3>
+                            <div class="select">
+                                <select>
+                                    <option>검색광고</option>
+                                    <option>콘텐츠광고</option>
+                                    <option>바이럴광고</option>
+                                    <option>DA광고</option>
+                                    <option>기타광고</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-box">
+                            <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                            </div>
+                            <a href="#" class="view">자세히보기</a>
+                    <button>문의하기</button>
+                    <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+                </div>
+                <a href="#" class="open">빠른상담</a>
+            </aside>
+        </div>
+        <!--//sideBar-->
+        <!--top-->
+        <a href="#top" class="goTop"></a>
+        <!--//top-->
+        <section class="main" id="main">
+           <p class="mainImg"><img src="../asset2019/img/company_main.png" alt=""></p>
+            <div class="mainTitle">
+                <h2>company</h2>
+                <p>하나애드는 데이터 기반<br class="mo"> 디지털마케팅 전문 기업입니다.</p>
+            </div>
+        </section>
+        <!--//main-->
+        <!--contents-->
+        <section class="topCont">
+            <div class="inner">
+                <ul class="scroll">
+                    <li><a href="#">overview</a></li>
+                    <li><a href="#">vision</a></li>
+                    <li><a href="#">history</a></li>
+                </ul>
+                <div class="left">
+                    <h2>Creativity<span>+</span></h2>
+                    <h2>Tech Solution</h2>
+                    <p>하나애드는 대한민국에서 가장 창의적이고,<br>
+                    트렌디한 콘텐츠를 만들고 하나애드만의 <br class="mo b">노하우가 담긴<br class="pc">
+                    데이터기반 <br class="mo b">광고 최적화 솔루션을 제공합니다.</p>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li>Creativity</li>
+                        <li>익숙함을 새롭게, 낯섦을 친근하게 만드는 <br class="mo c">하나애드</li>
+                        <li>Tech Solution</li>
+                        <li>하나애드만의 노하우가 담긴 고객사 맞춤 <br class="mo b">광고최적화 솔루션</li>
+                    </ul>
+                    <p class="hanaad"><img src="../asset2019/img/companyLogo.png" alt="하나애드아이엠씨"></p>
+                </div>
+            </div>
+        </section>
+        <section class="overview">
+            <div class="mainTitle">
+                <h2>overview</h2>
+                <p>하나애드는 오랜기간 다수의 고객사와 장기적인 <br class="mo">관계를 유지하며 지속적인 성장을 <br class="mo c">함께 하고 있습니다.</p>
+            </div>
+            <ul class="counting">
+                <li>
+                    <h3>2018년 광고취급고</h3>
+                    <p><span class="count a">600</span>억</p>
+                </li>
+                <li>
+                    <h3>고객과 함께 성장한</h3>
+                    <p><span class="count b">16</span>년</p>
+                </li>
+                <li>
+                    <h3>광고유지율</h3>
+                    <p><span class="count c">70</span>%</p>
+                </li>
+                <li>
+                    <h3>광고기간</h3>
+                    <p><span class="count d">4</span>년</p>
+                </li>
+            </ul>
+        </section>
+        <section class="vision">
+            <span class="line"></span><span class="line a"></span>
+            <div class="mainTitle">
+                <h2>vision</h2>
+                <p>하나애드의 모든 고민과 연구는 <br class="mo a">고객사의 매출견인으로 연결됩니다.</p>
+            </div>
+            <ul class="hanaIcon">
+                <li>
+                    <p class="icon"><img src="../asset2019/img/companyVisionH.png" alt="H"></p>
+                    <h3><span>H</span>igh</h3>
+                    <p class="text">고퀄리티, 고효율,<br>고성장을 위한</p>
+                </li>
+                <li>
+                    <p class="icon"><img src="../asset2019/img/companyVisionA.png" alt="A"></p>
+                    <h3><span>A</span>ll-in-one</h3>
+                    <p class="text">올인원 디지털 광고<br>서비스를 제공하고</p>
+                </li>
+                <li>
+                    <p class="icon"><img src="../asset2019/img/companyVisionN.png" alt="N"></p>
+                    <h3><span>N</span>ew</h3>
+                    <p class="text">새로운 성장<br>가능성에 대한</p>
+                </li>
+                <li>
+                    <p class="icon"><img src="../asset2019/img/companyVisionA.png" alt="A"></p>
+                    <h3><span>A</span>nswer</h3>
+                    <p class="text">고객사 맞춤형<br>해결방안을 제시</p>
+                </li>
+            </ul>            
+        </section>
+        <section class="history">
+            <div class="mainTitle">
+                <h2>history</h2>
+                <p>하나애드가 걸어온 모든 순간은 <br class="mo a">고객사의 매출성장과 함께 하였습니다.</p>
+                <p>하나애드가 걸어온 열정과 노력의 한 걸음들이 모여 <br class="mo a">고객사와 함께 성장하는 하나애드를 만들었습니다.<br>앞으로의 발걸음 또한 고객사와 함께 성장하기 위한 <br class="mo c">열정의 <br class="mo a">발걸음이 될 것 입니다.</p>
+            </div>
+            <div class="inner">
+                <ul class="year">
+                    <li><a href="#" class="on">2019 ~ 2017</a></li>
+                    <li><a href="#">2016 ~ 2011</a></li>
+                    <li><a href="#">2010 ~ 2004</a></li>
+                </ul>
+                <div class="box a">
+                    <h3>2019<br>~<br>2017</h3>
+                    <ul class="list">
+                        <li>
+                            <h4>2019</h4>
+                            <ul class="detail">
+                                <li>유한킴벌리 마케팅 대행</li>
+                                <li>A+ 에셋 마케팅 대행</li>
+                                <li>본죽 마케팅 대행</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>2018</h4>
+                            <ul class="detail">
+                                <li>U+알뜰모바일, 한국미스미, 에큐온, <br class="mo b">유한킴벌리 마케팅 대행 </li>
+                                <li>Achain2018 토큰스카이 블록체인 <br class="mo b">컨퍼런스 홍보부스 제작</li>
+                                <li>가족친화인증기업, 여성친화일촌기업, <br class="mo b">벤처기업 인증</li>
+                                <li>부설연구소 설립</li>
+                                <li>전사 해외워크샵(괌)</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>2017</h4>
+                            <ul class="detail">
+                                <li>ASP 사업진출</li>
+                                <li>시사 YBM 마케팅 대행</li>
+                                <li>토요타코리아 마케팅 대행</li>
+                                <li>리더스코스메틱 마케팅 대행</li>
+                                <li>전사 해외워크샵(사이판)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box b">
+                    <h3>2016<br>~<br>2011</h3>
+                    <ul class="list">
+                        <li>
+                            <h4>2016 ~ 2014</h4>
+                            <ul class="detail">
+                                <li>애플코리아, 인터파크, 사람인, LGU+ <br class="mo b">마케팅 대행 </li>
+                                <li>약50여개사에 대한SNS마케팅실적</li>
+                                <li>약1,000여건검색광고대행실적</li>
+                                <li>브랜드활성화, 온/오프라인 통합프로모션</li>
+                                <li>게임 및 APP 프로모션, 해외마케팅 등 <br class="mo b">다양한 분야경험</li>
+                                <li>SNS Platform 개발, SNS분석 및 <br class="mo b">리포트솔루션개발 </li>
+                                <li>3년 연속 SK플래닛 Syrup Wallet & OK Cash Bag 연간 대행사 선정</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>2013 ~ 2011</h4>
+                            <ul class="detail">
+                                <li>중국포털사이트 “바이두” <br class="mo b">1급 대행사 선정</li>
+                                <li>중국APP “포토원터” 마케팅 <br class="mo b">프로젝트 진행</li>
+                                <li>SNS/모바일사업부 신설 </li>
+                                <li>네이버 쿠폰 마케팅 공식대행사 선정</li>
+                                <li>MG손해보험, 레스모아, 보람상조, <br class="mo b">창업몰, 자생한방병원 마케팅 대행</li>
+                                <li>영화 '피에타‘, 영화진흥위원회, <br class="mo b">한미교육위원회 마케팅 대행</li>
+                                <li>토요타코리아 공식 대행사 선정</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box c">
+                    <h3>2010<br>~<br>2004</h3>
+                    <ul class="list">
+                        <li>
+                            <h4>2010 ~ 2007</h4>
+                            <ul class="detail">
+                                <li>구글코리아2007년 성장률1위 대행사</li>
+                                <li>오버추어(유)우수대행사 선정<br class="mo b">(최고등급CA대행사)</li>
+                                <li>㈜NHN광고대행업무계약</li>
+                                <li>Search AD전문사업부 확장</li>
+                                <li>OPERA 솔루션정식 Launching</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>2006 ~ 2004</h4>
+                            <ul class="detail">
+                                <li>㈜다음커뮤니케이션 공식대행사</li>
+                                <li>㈜엠파스(네이트) 공식대행사</li>
+                                <li>㈜오버추어코리아 공식대행사</li>
+                                <li>㈜NHN광고 공식대행사</li>
+                                <li>구글코리아 공식대행사 오버추어(유) <br class="mo b">우수대행사선정 (최고등급 CA대행사) </li>
+                                <li>오버추어(유)우수대행사선정<br class="mo b">(Power Agency) </li>
+                                <li>오버추어/NHN주관 OMS2008 <br class="mo b">스폰서참여 및 사례 발표</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>                                
+            </div>
+        </section>
+        <section class="bottom">
+            <p class="pc"><img src="../asset2019/img/companyBottom.png" alt="회사내부"></p>
+            <p class="mo"><img src="../asset2019/img/companyBottom2.png" alt="회사내부"></p>
+        </section>
+        
+
+
+        <!--//contents-->
+        <!--footer-->
+        <footer>
+            <div class="inner">
+                <ul class="left">
+                    <li>(주)하나애드아이엠씨<span class="mo">Ⅰ</span><br class="mo b">사업자등록 : 117-81-48164 Ⅰ대표 : 김진백</li>
+                    <li>서울시 영등포구 여의도동 17-3 삼환까뮤빌딩<br class="mo b">(태흥빌딩) 2층 (07236)</li>
+                    <li>Tel. 02-2051-5620ⅠFax. 02-2051-5654<span class="mo">Ⅰ</span><br class="mo b">E-mail. mkt1@hanaad.net</li>
+                    <li>무통장입금 (하나은행) : 772-910004-07104<em class="mo">Ⅰ</em><br class="mo">통신판매업 신고번호 : 제2016-서울영등포-0824호</li>
+                    <li><img src="../asset2019/img/footer.png" alt="인증마크"></li>
+                </ul>
+                <ul class="right">
+                    <li><img src="../asset2019/img/naver.png" alt="네이버공식대행사"></li>
+                    <li><img src="../asset2019/img/kakao.png" alt="카카오공식대행사"></li>
+                    <li><img src="../asset2019/img/google.png" alt="구글공식대행사"></li>
+                    <li><img src="../asset2019/img/criteo.png" alt="크리테오공식대행사"></li>
+                </ul>
+            </div>
+        </footer>
+         <!--//footer-->
+    </div>   
+	</body>
+</html>		

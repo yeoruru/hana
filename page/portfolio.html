@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
+    <title>하나애드IMC -온라인마케팅의 시작과 끝!</title>
+    <meta name="description" content="디지털 마케팅 대행사, 데이터 분석 전문가로 구성된 퍼포먼스 마케팅, SA, DA, Video, Mobile 마케팅 대행사">
+    <!--css-->
+    <link href="../asset2019/css/sub.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../asset2019/img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../asset2019/css/component.css" />		
+    <!--script-->
+    <script src="../asset2019/js/jquery-3.3.1.min.js"></script>
+    <script src="../asset2019/js/ui_library_common.js"></script>
+    <script src="../asset2019/js/modernizr.custom.js"></script>
+    <script src="../asset2019/js/script_main.js"></script>    
+    <script>
+        $(function() {
+            $('header').addClass('on');
+        });
+
+        //headerFix서브페이지
+        var scrollTop =0;  
+        headerFix();
+
+        $(window).on('scroll' ,function (){
+            headerFix();
+        });  
+        function headerFix() {
+            scrollTop = $(document).scrollTop();   
+            $('header').addClass('on');
+            $('.logoimg').attr("src", 'asset2019/img/logo2.png');
+            $('div.fast').addClass('on');
+            $('div.fastM').addClass('on');
+            $('.goTop').addClass('on');
+            if (scrollTop < 150) {
+                $('header').addClass('on');
+                $('.logoimg').attr("src", 'asset2019/img/logo.png');
+                $('section.hana').removeClass('on');
+                $('div.fast').removeClass('on');
+                $('div.fastM').removeClass('on');
+                $('.goTop').removeClass('on');
+            }
+        } 
+</script>
+</head>
+<body>
+    <div class="wrap">
+        <!--SKIP-->
+        <a href="#main" id="skip-nav">본문 바로가기</a>
+        <!--SKIP-->
+        <!--main-->
+        <header>
+            <h1 class="logo"><a href="../index.html"><img src="../asset2019/img/logo2.png" alt="하나애드아이엠씨"></a></h1>
+            <a href="#" class="moGnb"></a>
+            <nav class="pc">
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <span class="bar"></span>
+                <a href="#" class="down">회사소개서<span><img src="../asset2019/img/down.png" alt="다운로드"></span></a>
+            </nav>
+            <nav class="mo">
+                <div class="top">
+                    <a href="#" class="close"><img src="../asset2019/img/moOpen2.png" alt="닫기"></a>
+                </div>
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="gnbIcon">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="bottom">
+                    <li>Tel.  02)2051-5620</li>
+                    <li>Email. mkt1@hanaad.net</li>
+                    <li>ⓒ 2019 HANAAD IMC</li>
+                </ul>
+            </nav>
+        </header>
+        <!--sideBar-->
+        <div class="fast">
+            <aside class="sideBar">
+                <a href="#" class="open">빠른상담<br><p>열기</p></a>
+                <div class="inner">
+                    <div class="form-box">
+                        <h3><em>*</em>고객사</h3>
+                        <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>담당자</h3>
+                        <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>연락처</h3>
+                        <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>관심상품</h3>
+                        <div class="select">
+                            <select>
+                                <option>검색광고</option>
+                                <option>콘텐츠광고</option>
+                                <option>바이럴광고</option>
+                                <option>DA광고</option>
+                                <option>기타광고</option>
+                            </select>
+                        </div>
+                        <div class="check-box">
+                        <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                        </div>
+                        <a href="#" class="view">자세히보기</a>
+                        <button>문의하기</button>
+                    </div>
+                </div>
+                <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+            </aside>
+        </div>
+        <div class="fastM">
+            <aside class="sideBar">
+                <div class="box">
+                    <div class="inner">
+                       <h2><span>빠른상담</span> 문의</h2>
+                       <a href="#" class="close"><img src="asset2019/img/moOpen3.png" alt="닫기"></a>
+                        <div class="form-box">
+                            <h3><em>*</em>고객사</h3>
+                            <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>담당자</h3>
+                            <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>연락처</h3>
+                            <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>관심상품</h3>
+                            <div class="select">
+                                <select>
+                                    <option>검색광고</option>
+                                    <option>콘텐츠광고</option>
+                                    <option>바이럴광고</option>
+                                    <option>DA광고</option>
+                                    <option>기타광고</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-box">
+                            <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                            </div>
+                            <a href="#" class="view">자세히보기</a>
+                    <button>문의하기</button>
+                    <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+                </div>
+                <a href="#" class="open">빠른상담</a>
+            </aside>
+        </div>
+        <!--//sideBar-->
+        <!--top-->
+        <a href="#top" class="goTop"></a>
+        <!--//top-->
+        <section class="main portfoliomain" id="main">
+           <p class="mainImg"><img src="../asset2019/img/portfolioMain.png" alt=""></p>
+            <div class="mainTitle">
+                <h2>portfolio</h2>
+                <p>고객사 브랜드를 특별하게 만드는 <br class="mo">단 하나의 차이, 하나애드</p>
+            </div>
+        </section>
+        <!--//main-->
+        <!--contents-->
+        <section class="tab">
+            <article class="tabMenu">
+                <ul>
+                    <li><a href="#" class="on">all</a></li>
+                    <li><a href="#">Performance</a></li>
+                    <li><a href="#">Branding</a></li>
+                    <li><a href="#">Contents</a></li>
+                    <li><a href="#">asp</a></li>
+                    <li><a href="#">etc</a></li>
+                </ul>
+            </article>
+            <article class="container">
+                <ul class="grid effect-3" id="grid">
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_2.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo3.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_1.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo1.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_3.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo1.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_1.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo3.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_1.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo3.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_3.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo2.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_1.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo1.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_2.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo3.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_2.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo3.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_1.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo1.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_3.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo1.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_1.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo3.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_1.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo3.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_3.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo2.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_1.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo1.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                    <li><a href="#">
+                        <p class="thumbnail"><img src="../asset2019/img/portfolioSub_2.png" alt="애플"></p>
+                        <p class="logo"><img src="../asset2019/img/portfolioSub_1_logo3.png" alt="애플"></p>
+                        <p class="text">Performance <span>Marketing</span></p>
+                    </a></li>
+                </ul>
+		</article>
+        </section>
+        <!--//contents-->
+        <!--footer-->
+        <footer>
+            <div class="inner">
+                <ul class="left">
+                    <li>(주)하나애드아이엠씨Ⅰ사업자등록 : 117-81-48164 Ⅰ대표 : 김진백</li>
+                    <li>서울시 영등포구 여의도동 17-3 삼환까뮤빌딩(태흥빌딩) 2층 (07236)</li>
+                    <li>Tel. 02-2051-5620ⅠFax. 02-2051-5654ⅠE-mail. mkt1@hanaad.net</li>
+                    <li>무통장입금 (하나은행) : 772-910004-07104<em class="mo">Ⅰ</em><br class="mo">통신판매업 신고번호 : 제2016-서울영등포-0824호</li>
+                    <li><img src="../asset2019/img/footer.png" alt="인증마크"></li>
+                </ul>
+                <ul class="right">
+                    <li><img src="../asset2019/img/naver.png" alt="네이버공식대행사"></li>
+                    <li><img src="../asset2019/img/kakao.png" alt="카카오공식대행사"></li>
+                    <li><img src="../asset2019/img/google.png" alt="구글공식대행사"></li>
+                    <li><img src="../asset2019/img/criteo.png" alt="크리테오공식대행사"></li>
+                </ul>
+            </div>
+        </footer>
+         <!--//footer-->
+    </div> 
+		<script src="../asset2019/js/masonry.pkgd.min.js"></script>
+		<script src="../asset2019/js/imagesloaded.js"></script>
+		<script src="../asset2019/js/classie.js"></script>
+		<script src="../asset2019/js/AnimOnScroll.js"></script>
+		<script>
+			new AnimOnScroll( document.getElementById( 'grid' ), {
+				minDuration : 0.4,
+				maxDuration : 0.7,
+				viewportFactor : 0.2
+			} );
+		</script>          
+	</body>
+</html>		

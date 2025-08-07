@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
+    <title>하나애드IMC -온라인마케팅의 시작과 끝!</title>
+    <meta name="description" content="디지털 마케팅 대행사, 데이터 분석 전문가로 구성된 퍼포먼스 마케팅, SA, DA, Video, Mobile 마케팅 대행사">
+    <!--css-->
+    <link href="../asset2019/css/sub.css" rel="stylesheet" type="text/css">
+    <link href="../asset2019/css/font.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../asset2019/img/favicon.ico">
+    <!--script-->
+    <script src="../asset2019/js/jquery-3.3.1.min.js"></script>
+    <script src="../asset2019/js/ui_library_common.js"></script>
+    <script src="../asset2019/js/script_main.js"></script>    
+    <script>
+        $(function() {
+            $('header').addClass('on');
+        });
+
+        //headerFix서브페이지
+        var scrollTop =0;  
+        headerFix();
+
+        $(window).on('scroll' ,function (){
+            headerFix();
+        });  
+        function headerFix() {
+            scrollTop = $(document).scrollTop();   
+            $('header').addClass('on');
+            $('.logoimg').attr("src", 'asset2019/img/logo2.png');
+            $('div.fast').addClass('on');
+            $('div.fastM').addClass('on');
+            $('.goTop').addClass('on');
+            if (scrollTop < 150) {
+                $('header').addClass('on');
+                $('.logoimg').attr("src", 'asset2019/img/logo.png');
+                $('section.hana').removeClass('on');
+                $('div.fast').removeClass('on');
+                $('div.fastM').removeClass('on');
+                $('.goTop').removeClass('on');
+            }
+        } 
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!--top-->
+        <a href="#top" class="goTop"></a>
+        <!--//top-->
+        <section class="main hochiminhmain" id="main">
+           <p class="mainImg"><img src="../asset2019/img/hochiminh_main.png" alt=""></p>
+            <div class="mainTitle">
+                <h2><span>in</span> Hochiminh</h2>
+                <p>하나애드 호치민은  하나애드 IMC의 호치민 협력사로 <br class="pc">온·오프라인 광고대행 및 광고제작 서비스를 <br class="mo">전문적으로 제공합니다. </p>
+            </div>
+        </section>
+        <!--//main-->
+        <!--contents-->
+        <section class="hochiminh">
+        	<div class="mainTxt">
+        		<img src="../asset2019/img/hochiminh_img1.png" alt="하나애드 호치민">
+        		<p><b>‘포스트 차이나’</b>로 불리는 베트남은, <br class="pc">
+				연평균 7%의 경제성장률과 인구 1억명이라는 <br class="mo">대형 내수시장을 갖춘 기회의 나라입니다. <br class="pc">
+				<span>하나애드 호치민과 함께 준비하세요!</span></p>
+        	</div>
+        	<ul>
+        		<li><img src="../asset2019/img/hochiminh_img2.png" alt=""></li>
+        		<li><img src="../asset2019/img/hochiminh_img3.png" alt=""></li>
+        		<li><img src="../asset2019/img/hochiminh_img66.png" alt=""></li>
+        		<li><a href="#" class="video"><img src="../asset2019/img/hochiminh_img4.png" alt=""></a></li>
+        		<li><a href="#" class="video"><img src="../asset2019/img/hochiminh_img5.png" alt=""></a></li>
+        		<li><a href="#" class="video"><img src="../asset2019/img/hochiminh_img6.png" alt=""></a></li>
+        	</ul>
+        </section>
+        <section class="hochiminhB">
+        	<div class="mainTitle">
+        		<h2>BUSINESS AREA</h2>
+        		<p><b>MMAD는 영상제작, 온라인광고, 사인물제작, 출력인쇄 등 <br class="mo">Total Solution</b>으로 <br class="pc">
+				광고주가 필요한 온·오프라인 <br class="mo">광고대행 부터 사인물 & 인쇄물 자체 제작 서비스를 <br class="mo">운영하고 있어 <br class="pc">
+				광고주의 편리함과 선택의 기회를 제공하는 <br class="mo">토탈 서비스 제공하고 있습니다.</p>
+        	</div>
+        </section>
+		<section class="hochiminhC">
+        	<p class="img">
+        		<img src="../asset2019/img/hochiminh_img8.png" alt="">
+        		<img src="../asset2019/img/hochiminh_img15.png" alt="">
+        	</p>
+        	<ul>
+        		<li><a href="#"><span class="img2">
+        			<img src="../asset2019/img/hochiminh_img9.png" alt="">
+        			<img src="../asset2019/img/hochiminh_img16.png" alt="">
+        		</span></a></li>
+        		<li><a href="#"><span class="img2">
+        			<img src="../asset2019/img/hochiminh_img10.png" alt="">
+        			<img src="../asset2019/img/hochiminh_img17.png" alt="">
+        		</span></a></li>
+        		<li><a href="#"><span class="img2">
+        			<img src="../asset2019/img/hochiminh_img11.png" alt="">
+        			<img src="../asset2019/img/hochiminh_img18.png" alt="">
+        		</span></a></li>
+        		<li><a href="#"><span class="img2">
+        			<img src="../asset2019/img/hochiminh_img12.png" alt="">
+        			<img src="../asset2019/img/hochiminh_img19.png" alt="">
+        		</span></a></li>
+        	</ul>
+		</section>
+        <section class="hochiminhD">
+        	<div class="mainTitle">
+        		<h2>Client</h2>
+        		<p>하나애드 호치민은 국가기관 및 국,내외 <br class="mo">다양한 기업들과 함께 작업하고 있습니다</p>
+        	</div>
+        	<img src="../asset2019/img/hochiminh_img13.png" alt="">   
+        	<img src="../asset2019/img/hochiminh_img20.png" alt="">     		
+       </section>
+        <section class="location ho">
+            <div class="inner">
+                <div class="text">
+                   	<img src="../asset2019/img/hochiminh_img1.png" alt="">
+                    <ul>
+                        <li>ADDRESS</li>
+                        <li>501B, 800 Nguyễn Văn Linh, Tân Phú, Quận 7,Hồ Chí Minh<br>
+						띠엔손 플라자(Thien Son Plaza) 5층 501B</li>
+                        <li class="g">하나애드호치민 ㅣ 사업자등록(MST) : 031563955 ㅣ 담당 : 구교준 </li>
+                    </ul>
+                    <ul>
+                        <li>찾아오시는 길</li>
+                        <li>사이공컨벤션 (SECC) 맞은편 도보 3분 FV종합병원 정문 기준 좌측 건물</li>
+                    </ul>
+                    <ul>
+                        <li>CONTACT INFO</li>
+                        <li>TEL : 070-7600-6408</li>
+                        <li>PH : +84)84-203-7553</li>
+                        <li>E-mail : hana_hcmc@hanaad.net </li>
+                    </ul>
+                </div>
+                <div class="img"><img src="../asset2019/img/hochiminh_img14.png" alt=""></div>
+            </div>
+        </section>
+        <!-- video팝업 -->
+        <div class="videoBox">
+			<figure class="inVideo"><video autoplay muted loop playsinline  controls><source src="../asset2019/img/hochiminh/a.mp4" type="video/mp4"></video></figure>
+			<figure class="inVideo"><video autoplay muted loop playsinline  controls><source src="../asset2019/img/hochiminh/b.mp4" type="video/mp4"></video></figure>
+			<figure class="inVideo"><video autoplay muted loop playsinline  controls><source src="../asset2019/img/hochiminh/c.mp4" type="video/mp4"></video></figure>
+        	<a href="#" class="close"><img src="../asset2019/img/moOpen2.png" alt=""></a>
+        </div>
+        <!--//contents-->
+    </div><!--//wrap-->
+	</body>
+</html>		

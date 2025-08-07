@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
+    <title>하나애드IMC -온라인마케팅의 시작과 끝!</title>
+    <meta name="description" content="디지털 마케팅 대행사, 데이터 분석 전문가로 구성된 퍼포먼스 마케팅, SA, DA, Video, Mobile 마케팅 대행사">
+    <!--css-->
+    <link href="../asset2019/css/sub.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../asset2019/img/favicon.ico">
+    <!--script-->
+    <script src="../asset2019/js/jquery-3.3.1.min.js"></script>
+    <script src="../asset2019/js/ui_library_common.js"></script>
+    <script src="../asset2019/js/modernizr.custom.js"></script>
+    <script src="../asset2019/js/script_main.js"></script>    
+    <script>
+        $(function() {
+            $('header').addClass('on');
+        });
+
+        //headerFix서브페이지
+        var scrollTop =0;  
+        headerFix();
+
+        $(window).on('scroll' ,function (){
+            headerFix();
+        });  
+        function headerFix() {
+            scrollTop = $(document).scrollTop();   
+            $('header').addClass('on');
+            $('.logoimg').attr("src", 'asset2019/img/logo2.png');
+            $('div.fast').addClass('on');
+            $('div.fastM').addClass('on');
+            $('.goTop').addClass('on');
+            if (scrollTop < 150) {
+                $('header').addClass('on');
+                $('.logoimg').attr("src", 'asset2019/img/logo.png');
+                $('section.hana').removeClass('on');
+                $('div.fast').removeClass('on');
+                $('div.fastM').removeClass('on');
+                $('.goTop').removeClass('on');
+            }
+        } 
+</script>
+<style>
+    div.box{background: #fff; width: 100%; height: 100vh; overflow: auto;} 
+    div.box .top {width: 100%; height: 45px; line-height: 45px; background: #f7f7f7;}
+    div.box .top h2 {font-size: 17px; padding-left: 10px;}
+    div.box .in {padding: 10px 12px 0 8px; box-sizing: border-box; text-align: justify; line-height: 1.4;}
+    div.box .in ul li {margin-bottom: 5px; font-size: 14px; padding-left: 15px;}
+    div.box .in ul li em {margin-left: -15px; margin-right: 3px;}
+    div.box .in ul li span {display: block;}
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <!--개인정보취급방침-->
+        <div class="box">
+            <div class="top">
+                <h2>개인정보 제공에 관한 사항 동의 안내</h2>
+            </div>
+            <div class="in">
+                <ul>
+                    <li><em>1.</em>개인정보의 수집 및 이용목적 하나애드(이하 “회사”라 합니다.)는 고객 문의 지원 업무를 위해 아래와 같은 개인정보를 수집하고 있으며, 고객 상담과 문의응대를 위해서만 해당 정보를 활용합니다.</li>
+                    <li><em>2.</em>수집하는 개인정보 항목
+                    <span>- 필수 항목: 이름, 이메일, 전화번호, 홈페이지 주소</span></li>
+                    <li><em>3.</em>회사는 원칙적으로 개인정보 수집 및 이용목적 이 달성된 후, 해당 개인정보를 지체 없이 파 기합니다.
+                    단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 관계법령이 정한 일정한 기간 동안 개인정보를 보관합니다. 그 밖의 사항은 개인정보 취급방침을 준수합니다.</li>
+                </ul>
+            </div>
+        </div>        
+    </div>        
+	</body>
+</html>		

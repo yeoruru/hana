@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
+    <title>하나애드IMC -온라인마케팅의 시작과 끝!</title>
+    <meta name="description" content="디지털 마케팅 대행사, 데이터 분석 전문가로 구성된 퍼포먼스 마케팅, SA, DA, Video, Mobile 마케팅 대행사">
+    <!--css-->
+    <link href="../asset2019/css/sub.css" rel="stylesheet" type="text/css">
+    <!--script-->
+    <style>
+    /*포트폴리오내용 팝업*/
+    .p_popupM {width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5);font-family: 'NanumSquare', sans-serif; font-weight: 400;}
+    .p_popupM .box{width: 950px; z-index: 200;background: #fff; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); box-sizing: border-box;}
+    .p_popupM .top {background: #ef3c39; color: #fff; height: 65px; line-height: 65px; overflow: hidden; padding:  0 20px; box-sizing: border-box;}
+    .p_popupM .top h1 {float: left; font-size: 22px;}
+    .p_popupM .close {line-height: 65px;background: #ef3c39 url(../asset2019/img/p_arrow2.png) no-repeat center/60%; border:none; width: 40px; height: 40px; display: block; margin: 0 auto 20px;}
+    .p_popupM .contents {background: #fff; padding: 45px; overflow: hidden; box-sizing: border-box;}
+    .p_popupM .contents .img {float: left; width: 350px; height: 350px; border-radius: 50%; overflow: hidden; margin-bottom: 40px;}
+    .p_popupM .contents .text {float: right; width: 54%;color: #000;}
+    .p_popupM .contents .text .category {font-size: 14px;font-family: 'Mada', sans-serif; font-weight: bold; border: 1px solid #000; display: inline-block; padding: 3px 10px; border-radius: 40px;}
+    .p_popupM .contents .text ul {margin-top: 40px;}
+    .p_popupM .contents .text ul li {font-size: 17px; line-height: 1.4; position: relative; margin-left: 100px; margin-bottom: 10px;}
+    .p_popupM .contents .text ul li:before {content: '운영매체'; position: absolute; left: -90px; top: 0; font-weight: 800;}
+    .p_popupM .contents .text ul li:after {content: '-'; position: absolute; left: -100px; top: 0; font-weight: 800; color: #ef3c39;}
+    .p_popupM .contents .text ul li:nth-child(2):before {content: '캠페인 목표';}
+    .p_popupM .contents .text ul li:nth-child(3):before {content: '핵심 전략';}
+    .p_popupM .contents .text ul li em {font-weight: 800; margin-right: 20px;}
+    .p_popupM .contents .inner {clear: both; background: #f7f7f7; padding: 30px 40px; line-height: 1.4; font-size: 17px; max-height: 240px; overflow: auto;}
+    .p_popupM .contents .inner span {display: block; font-weight: bold; margin-top: 10px; color: #ef3c39;}
+    @media screen and (max-width:1024px) {
+        .p_popupM { background: none;overflow: auto;box-shadow: none; transform: none; left: 0;}
+        .p_popupM .box{width: 100%; top:0; left: 0; transform: none; box-sizing: border-box;}
+        .p_popupM .contents {overflow: hidden;}
+        .p_popupM .contents .img {float: none; margin: auto;}
+        .p_popupM .contents .text{float: none; width: 100%; margin: 20px auto;}
+        .p_popupM .contents .text h2 ,.p_popup .contents .text h3 {text-align: center;}
+    }
+    @media screen and (max-width:767px) {
+        .p_popupM .contents .inner::-webkit-scrollbar {width: 5px;}
+        .p_popupM .top {height: 50px;line-height: 50px;}
+        .p_popupM .top .close {width: 25px; height: 25px;line-height: 50px;}
+        .p_popupM .top h1 {font-size: 20px;}
+        .p_popupM .contents {padding: 30px 15px; box-sizing: border-box;}
+        .p_popupM .contents .img {width: 250px; height: 250px; text-align: center;}
+        .p_popupM .contents .img img {width: 100%;}
+        .p_popupM .contents .text .logo img {width: 80%;}
+        .p_popupM .contents .text .category {font-size: 12px;}
+        .p_popupM .contents .text ul li {font-size: 14px; margin-left: 0; padding-top: 15px; margin-bottom: 12px; padding-left: 15px;}
+        .p_popupM .contents .text ul li:after {top: -10px; left: 0; font-weight: 800; font-size: 18px;}
+        .p_popupM .contents .text ul li:before {top: -8px; left: 13px;font-size: 15px; font-weight: 600;}
+        .p_popupM .contents .inner {padding: 15px; font-size: 14px;}
+    }
+    </style>
+</head>
+<body>
+       <!--포트폴리오내용 팝업-->
+        <div class="p_popupM">
+            <div class="box">
+                <div class="top">
+                    <h1>U+ 알뜰모바일</h1>
+                </div>
+                <div class="contents">
+                    <div class="img"><img src="../asset2019/img/portfolioSub_2.png" alt="애플"></div>
+                    <div class="text">
+                        <h2 class="logo"><img src="../asset2019/img/portfolioSub_1_logo2.png" alt="애플"></h2>
+                        <h3>
+                            <p class="category">Performance Marketing</p>
+                            <p class="category">Brand Marketing</p>
+                        </h3>
+                        <ul>
+                            <li>키워드 광고 4개 매체</li>
+                            <li>유효 트래픽 확보 및 수강 신청자 증대</li>
+                            <li>주요타켓 키워드 집중 운영을 통한 전환 최적화</li>
+                        </ul>
+                    </div>
+                    <div class="inner">
+                        일/주단위 분석을 통한 전략 제안으로 광고 효율을 향상시키는 긍정적인 결과 도출, 광고 효율 분석을 위해 
+                        주요 상품 페이지 실적 비교하여 LPO 인사이트 제공, 국내 최고 토익인강 브랜드라는 포지션 강화
+                        <span>+ 유효 트래픽 40% 증가 + 수강신청 건수 13% 상승 + CPC 25% 감소</span>
+                    </div>
+                </div> 
+                <button class="close"></button>
+            </div>           
+        </div> 
+        <!--//포트폴리오내용 팝업-->
+	</body>
+</html>		

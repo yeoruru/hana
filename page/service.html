@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
+    <title>하나애드IMC -온라인마케팅의 시작과 끝!</title>
+    <meta name="description" content="디지털 마케팅 대행사, 데이터 분석 전문가로 구성된 퍼포먼스 마케팅, SA, DA, Video, Mobile 마케팅 대행사">
+    <!--css-->
+    <link href="../asset2019/css/sub.css" rel="stylesheet" type="text/css">
+    <link href="../asset2019/css/font.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="../asset2019/img/favicon.ico">
+    <!--script-->
+    <script src="../asset2019/js/jquery-3.3.1.min.js"></script>
+    <script src="../asset2019/js/ui_library_common.js"></script>
+    <script src="../asset2019/js/script_main.js"></script>    
+    <script>
+        $(function() {
+            $('header').addClass('on');
+        });
+
+        //headerFix서브페이지
+        var scrollTop =0;  
+        headerFix();
+
+        $(window).on('scroll' ,function (){
+            headerFix();
+        });  
+        function headerFix() {
+            scrollTop = $(document).scrollTop();   
+            $('header').addClass('on');
+            $('.logoimg').attr("src", 'asset2019/img/logo2.png');
+            $('div.fast').addClass('on');
+            $('div.fastM').addClass('on');
+            $('.goTop').addClass('on');
+            if (scrollTop < 150) {
+                $('header').addClass('on');
+                $('.logoimg').attr("src", 'asset2019/img/logo.png');
+                $('section.hana').removeClass('on');
+                $('div.fast').removeClass('on');
+                $('div.fastM').removeClass('on');
+                $('.goTop').removeClass('on');
+            }
+        } 
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <!--SKIP-->
+        <a href="#main" id="skip-nav">본문 바로가기</a>
+        <!--SKIP-->
+        <!--main-->
+        <header>
+            <h1 class="logo"><a href="../index.html"><img src="../asset2019/img/logo2.png" alt="하나애드아이엠씨"></a></h1>
+            <a href="#" class="moGnb"></a>
+            <nav class="pc">
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <span class="bar"></span>
+                <a href="#" class="down">회사소개서<span><img src="../asset2019/img/down.png" alt="다운로드"></span></a>
+            </nav>
+            <nav class="mo">
+                <div class="top">
+                    <a href="#" class="close"><img src="../asset2019/img/moOpen2.png" alt="닫기"></a>
+                </div>
+                <ul class="gnb">
+                    <li><a href="company.html">Company</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="tech.html">Tech Solution</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <ul class="gnbIcon">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <ul class="bottom">
+                    <li>Tel.  02)2051-5620</li>
+                    <li>Email. mkt1@hanaad.net</li>
+                    <li>ⓒ 2019 HANAAD IMC</li>
+                </ul>
+            </nav>
+        </header>
+        <!--sideBar-->
+        <div class="fast">
+            <aside class="sideBar">
+                <a href="#" class="open">빠른상담<br><p>열기</p></a>
+                <div class="inner">
+                    <div class="form-box">
+                        <h3><em>*</em>고객사</h3>
+                        <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>담당자</h3>
+                        <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>연락처</h3>
+                        <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                        <h3><em>*</em>관심상품</h3>
+                        <div class="select">
+                            <select>
+                                <option>검색광고</option>
+                                <option>콘텐츠광고</option>
+                                <option>바이럴광고</option>
+                                <option>DA광고</option>
+                                <option>기타광고</option>
+                            </select>
+                        </div>
+                        <div class="check-box">
+                        <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                        </div>
+                        <a href="#" class="view">자세히보기</a>
+                        <button>문의하기</button>
+                    </div>
+                </div>
+                <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+            </aside>
+        </div>
+        <div class="fastM">
+            <aside class="sideBar">
+                <div class="box">
+                    <div class="inner">
+                       <h2><span>빠른상담</span> 문의</h2>
+                       <a href="#" class="close"><img src="asset2019/img/moOpen3.png" alt="닫기"></a>
+                        <div class="form-box">
+                            <h3><em>*</em>고객사</h3>
+                            <p class="a"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>담당자</h3>
+                            <p class="b"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>연락처</h3>
+                            <p class="c"><input type="text" placeholder="" style="color: #000; font-size: 16px"></p>
+                            <h3><em>*</em>관심상품</h3>
+                            <div class="select">
+                                <select>
+                                    <option>검색광고</option>
+                                    <option>콘텐츠광고</option>
+                                    <option>바이럴광고</option>
+                                    <option>DA광고</option>
+                                    <option>기타광고</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check-box">
+                            <input type="checkbox" name="" id="agree1" /><label for="agree1"><span class="check"></span>개인정보취급방침 동의</label>
+                            </div>
+                            <a href="#" class="view">자세히보기</a>
+                    <button>문의하기</button>
+                    <div class="bottom"><span>전화상담</span>02) 2051-5620</div>
+                </div>
+                <a href="#" class="open">빠른상담</a>
+            </aside>
+        </div>
+        <!--//sideBar-->
+        <!--top-->
+        <a href="#top" class="goTop"></a>
+        <!--//top-->
+        <section class="main servicemain" id="main">
+           <p class="mainImg"><img src="../asset2019/img/serviceMain.png" alt=""></p>
+            <div class="mainTitle">
+                <h2>service</h2>
+                <p>하나애드는 올인원 디지털 통합 마케팅 <br class="mo">서비스를 제공합니다.</p>
+            </div>
+        </section>
+        <!--//main-->
+        <!--contents-->
+        <section class="topScroll">
+            <div class="inner">
+                <ul class="scroll">
+                    <li><a href="#">
+                        <h3><span>Performance</span> Marketing</h3>
+                        <p>전환 성과 극대화</p>
+                        <img src="../asset2019/img/serviceLi1.png" alt="" class="mo">
+                    </a></li>
+                    <li><a href="#">
+                        <h3><span>Brand</span> Marketing</h3>
+                        <p>전략적 미디어 믹스로 브랜드 인지도 제고</p>
+                        <img src="../asset2019/img/serviceLi2.png" alt="" class="mo">
+                    </a></li>
+                    <li><a href="#">
+                        <h3><span>Contents</span> Marketing</h3>
+                        <p>공감형 콘텐츠를 통해 브랜드 가치 전달</p>
+                        <img src="../asset2019/img/serviceLi3.png" alt="" class="mo">
+                    </a></li>
+                    <li><a href="#">
+                        <h3><span>Digital</span> Creation</h3>
+                        <p>마케팅 효율을 높이는 UI/UX</p>
+                        <img src="../asset2019/img/serviceLi4.png" alt="" class="mo">
+                    </a></li>
+                    <li><a href="#">
+                        <h3><span>App</span> Marketing</h3>
+                        <p>성공적인 앱 마케팅 캠페인 진행</p>
+                        <img src="../asset2019/img/serviceLi5.png" alt="" class="mo">
+                    </a></li>
+                    <li><a href="#">
+                        <h3><span>Marketing</span> ASP</h3>
+                        <p>전문 마케팅 솔루션 제공을 통한 동반 성장</p>
+                        <img src="../asset2019/img/serviceLi6.png" alt="" class="mo">
+                    </a></li>
+                    <li class="gfa">
+                        <b>NEW</b>
+                        <h3><span>GFA</span> Naver DA Marketing</h3>
+                        <p> | 효율 기반의 네이버/밴드 성과형 배너 집행</p>
+                        <a href="#"><i>자세히 보기 <span>></span></i><img src="../asset2019/img/serviceLi7.png" alt="" class="mo"></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="marketing">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <div class="title">
+                            <h3><span>Performance</span><br>Marketing</h3>
+                            <p>전환 성과 극대화</p>
+                        </div>
+                        <div class="text">
+                            <h4>16년의 노하우</h4>
+                            <p>16년간 쌓아온 디지털 마케팅에 대한 지식과 <br class="mo">노하우로 차별화된 서비스 제공</p>
+                            <h4>맞춤형 솔루션 활용</h4>
+                            <p>캠페인 목표에 최적화된 맞춤 솔루션을 통해 <br class="mo">최고의 퍼포먼스와 성과 도출</p>
+                            <h4>최고의 전담 마케터</h4>
+                            <p>퍼포먼스 마케팅전문 마케터들이 <br class="mo">다각도로 최적화된 캠페인 운영</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <h3><span>Brand</span><br>Marketing</h3>
+                            <p>전략적 미디어 믹스로<br class="pc">브랜드 인지도 제고</p>
+                        </div>
+                        <div class="text">
+                            <h4>브랜드 가치 극대화</h4>
+                            <p>소비자에게 전략적으로 브랜드를 노출하여 <br class="mo">브랜드 신뢰도를 높이고 잠재고객 유치</p>
+                            <h4>전략적 미디어 믹스</h4>
+                            <p>소비자와 소통 할 수 있는 최적의 미디어 믹스를 <br class="mo">전략적으로 운영하여 브랜드 인지도 증대</p>
+                            <h4>마케팅 인사이트 도출</h4>
+                            <p>브랜드 컨셉부터 통합마케팅까지 브랜드에 관한 <br class="mo">모든 인사이트를 연구하고 반영하여 캠페인 운영</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="title">
+                            <h3><span>Contents</span><br>Marketing</h3>
+                            <p>공감형 콘텐츠를 통해<br class="pc">브랜드 가치 전달</p>
+                        </div>
+                        <div class="text">
+                            <h4>사내 전문 스튜디오 운영</h4>
+                            <p>사내 전문 스튜디오를 통해 빠르게 변화하는 <br class="mo">온라인 트렌드에 부합하는 브랜드 콘텐츠 제작</p>
+                            <h4>공감형 콘텐츠 제작</h4>
+                            <p>소비자가 원하는 정보와 트렌디한 콘텐츠로 소통하고 <br class="mo">소비자의 관심을 유도하여 브랜드 가치 전달</p>
+                            <h4>채널 운영 및 관리</h4>
+                            <p>전문 마케터가 콘텐츠 제작부터 관리까지 <br class="mo">콘텐츠 확산을 위한 마케팅 활동 전담 운영</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="digital">
+            <div class="iconTitle">
+                <h2><span>Digital</span> Creation</h2>
+                <p>마케팅 효율을 높이는 UI/UX</p>
+            </div>
+            <div class="inner">
+                <div class="text">
+                    <h3>전환을 이끌어내는 사이트 운영 전략</h3>
+                    <p>브랜드의 특징과 사용자의 경험에 마케팅적인 인사이트를 반영하여 <br class="mo">사이트 안에서 사용자의 긍정적인 경험을 극대화 하고 전환까지 도출</p>
+                </div>
+                <div class="img">
+                    <img src="../asset2019/img/digital.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="app">
+            <div class="iconTitle">
+                <h2><span>APP</span> marketing</h2>
+                <p>마케팅 효율을 높이는 UI/UX</p>
+            </div>
+            <span class="line"></span>
+            <ul>
+                <li>
+                    <h3>User<br>Acquisiton</h3>
+                    <p>앱 카테고리와 타겟에 맞춰 설계된<br class="pc"> 미디어믹스를 통해 신규 유저 확보</p>
+                </li>
+                <li>
+                    <h3>Engagement</h3>
+                    <p>유저 인게이지먼트 증대를 위한<br class="pc"> 데이터 기반의 캠페인 최적화</p>
+                </li>
+                <li>
+                    <h3>Retention</h3>
+                    <p>앱 재사용률 및 충성도를<br class="pc"> 높일 수 있는 리텐션 전략 제시</p>
+                </li><li>
+                    <h3>Transaction</h3>
+                    <p>전략적인 캠페인 운영으로<br class="pc"> 앱 내 매출 극대화</p>
+                </li>
+            </ul>
+        </section>
+        <section class="asp">
+            <div class="iconTitle">
+                <h2><span>marketing</span> asp</h2>
+                <p>전문 마케팅 솔루션 제공을 통한 동반 성장</p>
+            </div>
+            <div class="middle">
+                <div class="a">
+                    <h3>디지털 마케팅 역량 지원</h3>
+                    <p>마케팅 대행 수수료를 <br class="mo">받는 대신 마케팅 인력과 <br class="mo">마케팅 자산을 통해<br class="pc">사업자의 <br class="mo">디지털 마케팅 역량 지원</p>
+                </div>
+                <div class="b">
+                    <h3>마케팅 시장 진입장벽 완화</h3>
+                    <p>좋은 서비스를 보유하고 있는 <br class="mo">오프라인 기반 기업들에게<br>ASP 플랫폼과 노하우를 제공하여 <br class="mo">마케팅 시장의 진입장벽 완화</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <p class="img"><img src="../asset2019/img/aspBottom.png" alt=""></p>
+                <div class="a">
+                    <ul>
+                        <li>서비스<br>제작/운영</li>
+                        <li>제휴<br>마케팅</li>
+                        <li>마케팅<br>투자</li>
+                        <li>마케팅<br>컨설팅</li>
+                        <li>광고 운용</li>
+                    </ul>
+                    <h4>ASP <span>(Agency Side Platform)</span></h4>       
+                    </div>  
+                <div class="b">
+                    <p>자본/마케팅 광고 운용</p>
+                    <p>수익/지분</p>
+                </div>       
+                <div class="c">
+                    <ul>
+                        <li>Startup<br>기업</li>
+                        <li>EC<br>기업</li>
+                        <li>O2O<br>기업</li>
+                    </ul>
+                    <h4>Partners</h4>
+                </div>
+            </div>
+        </section>
+        <section class="red">
+            <div class="inner">
+                <div class="left">
+                    <h3>성공적인 캠페인 운영을 위한<br><em>고객사 맞춤 미디어믹스 운영</em></h3>
+                    <p>고객사 캠페인에 최적화된 디지털 마케팅을 수행하기 위해<br>
+                    디지털 광고 부분의 다양한 영역을 전략적으로 선택하여<br>
+                    고객사 맞춤 미디어믹스 전략을 수립합니다.</p>
+                </div>
+                <div class="right">
+                    <ul class="a">
+                        <li>Performance<br>Marketing</li>
+                        <li>Brand<br>Marketing</li>
+                        <li>Contents<br>Marketing</li>
+                    </ul>
+                    <ul class="b">
+                        <li>Digital<br>creation</li>
+                        <li>SA</li>
+                        <li>DA</li>
+                        <li>Video</li>
+                        <li>Banner</li>
+                        <li>Landing<br>Page</li>
+                        <li>Mobile</li>
+                        <li>SNS</li>
+                    </ul>
+                    <ul class="c">
+                        <li>Influence</li>
+                        <li>Viral</li>
+                        <li>Contents</li>
+                        <li>Native<br>AD</li>
+                        <li>APP</li>
+                        <li>Marketing<br>ASP</li>
+                        <li>Offline<br>event</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--//contents-->
+        <!--footer-->
+        <footer>
+            <div class="inner">
+                <ul class="left">
+                    <li>(주)하나애드아이엠씨<span class="mo">Ⅰ</span><br class="mo b">사업자등록 : 117-81-48164 Ⅰ대표 : 김진백</li>
+                    <li>서울시 영등포구 여의도동 17-3 삼환까뮤빌딩<br class="mo b">(태흥빌딩) 2층 (07236)</li>
+                    <li>Tel. 02-2051-5620ⅠFax. 02-2051-5654<span class="mo">Ⅰ</span><br class="mo b">E-mail. mkt1@hanaad.net</li>
+                    <li>무통장입금 (하나은행) : 772-910004-07104<em class="mo">Ⅰ</em><br class="mo">통신판매업 신고번호 : 제2016-서울영등포-0824호</li>
+                    <li><img src="../asset2019/img/footer.png" alt="인증마크"></li>
+                </ul>
+                <ul class="right">
+                    <li><img src="../asset2019/img/naver.png" alt="네이버공식대행사"></li>
+                    <li><img src="../asset2019/img/kakao.png" alt="카카오공식대행사"></li>
+                    <li><img src="../asset2019/img/google.png" alt="구글공식대행사"></li>
+                    <li><img src="../asset2019/img/criteo.png" alt="크리테오공식대행사"></li>
+                </ul>
+            </div>
+        </footer>
+         <!--//footer-->
+    </div>   
+	</body>
+</html>		
