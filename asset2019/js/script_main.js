@@ -10,13 +10,13 @@
   function headerFix() {
      scrollTop = $(document).scrollTop();   
     $('header').addClass('on');
-    $('.logoimg').attr("src", '/asset/img/logo2.png');
+    $('.logoimg').attr("src", 'asset2019/img/logo2.png');
     $('div.fast').addClass('on');
     $('div.fastM').addClass('on');
     $('.goTop').addClass('on');
     if (scrollTop < 150) {
         $('header').removeClass('on');
-        $('.logoimg').attr("src", '/asset/img/logo.png');
+        $('.logoimg').attr("src", 'asset2019/img/logo.png');
         $('section.hana').removeClass('on');
         $('div.fast').removeClass('on');
         $('div.fastM').removeClass('on');
